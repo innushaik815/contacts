@@ -1,0 +1,14 @@
+<div>
+    <div class="h1" >
+        <h1>
+          <span class="dance">Contact Gallery</span>
+        </h1>
+        <div class="search">
+            <input type="text" placeholder="Search Notes" [(ngModel)]="searchText">
+            <button (click)="toggleSearch()">
+                {{ isSearching ? 'Reset' : 'Search' }}
+            </button>
+        </div>
+        
+        <i class="fa fa-gear fa-spin" style="font-size:88px"></i>      </div>
+</div>

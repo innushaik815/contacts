@@ -1,0 +1,19 @@
+<div class="whole">
+    <div class="one">
+      <div class="contacts">
+        <div class="card" *ngFor="let contact of contact" (mouseenter)="displayContact(contact)">
+          <div class="card-body">
+            <h5 class="card-title">
+              <span class="single">{{getFirstCharacter(contact.firstName)}}</span> {{contact.firstName}} {{ contact.lastName }}
+            </h5>
+            <p class="card-text">{{ contact.contactNo }}</p>
+            <p class="card-text">{{ contact.email }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="two">
+      <app-contactdisplay [selectedContact]="selectedContact"></app-contactdisplay>
+    </div>
+  </div>
+  

@@ -1,0 +1,107 @@
+.h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aquamarine;
+    color: black;
+    height: 100px;
+    align-items: center;
+  }
+
+  .h1 span {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .h1 input[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .h1 button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .fa-gear {
+    color: white;
+    background-color: aquamarine;
+    border-radius: 100%;
+    padding-left: 20px;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  button {
+    /* padding: 10px; */
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  @media (min-width: 679px) {
+    .h1 {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .h1 span {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .search {
+      margin-top: 0;
+    }
+
+    input[type="text"] {
+      max-width: 400px;
+      margin-right: 1rem;
+    }
+}
+.dance {
+  animation-name: dance;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes dance {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

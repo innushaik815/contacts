@@ -1,0 +1,61 @@
+/* .selected-contact {
+    background-color: #f8f9fa;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 1rem;
+  }
+  
+  .selected-contact .card-body {
+    padding: 1rem;
+  }
+  
+  .selected-contact h5 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .selected-contact .card-text {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: grey;
+  }
+   */
+
+
+   .selected-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #2c3e50;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .selected-contact .left {
+    margin-right: 20px;
+  }
+  
+  .selected-contact .left img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .selected-contact .right h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .selected-contact .right p {
+    font-size: 1.5rem;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  

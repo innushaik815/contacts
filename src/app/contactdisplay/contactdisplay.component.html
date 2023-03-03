@@ -1,0 +1,14 @@
+<!-- <div *ngIf="selectContact">
+  <h3>{{ selectContact.firstName }} {{ selectContact.lastName }}</h3>
+  <p>{{ selectContact.contactNo }}</p>
+  <p>{{ selectContact.email }}</p>
+</div> -->
+
+<div class="card selected-contact" *ngIf="selectedContact">
+    <div class="card-body">
+      <h5 class="card-title">{{ selectedContact.firstName }} {{ selectedContact.lastName }}</h5>
+      <p class="card-text">{{ selectedContact.contactNo }}</p>
+      <p class="card-text">{{ selectedContact.email }}</p>
+    </div>
+  </div>
+  
